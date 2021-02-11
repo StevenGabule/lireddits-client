@@ -10,11 +10,13 @@ const breakpoints = createBreakpoints({
   xl: '80em',
 })
 
+
 const theme = extendTheme({
   colors: {
     black: '#16161D',
   },
   fonts,
+  // @ts-ignore
   breakpoints,
   icons: {
     logo: {
