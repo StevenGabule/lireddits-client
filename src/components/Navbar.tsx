@@ -18,12 +18,15 @@ export const Navbar: React.FC<NavbarProps> = ({}) => {
   } else if (!data?.me) {
     body = (
       <>
-        {" "}
         <NextLink href="/login">
-          <Link mr={2}>Login</Link>
+          <Link mr={2}>
+            <a>Login</a>
+          </Link>
         </NextLink>
         <NextLink href="/register">
-          <Link>Register</Link>
+          <Link>
+            <a>Register</a>
+          </Link>
         </NextLink>
       </>
     );
